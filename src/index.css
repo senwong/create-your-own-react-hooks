@@ -1,0 +1,9 @@
+#root {
+	display: inline-block;
+	width: 400px;	
+}
+#root2 {
+	display: inline-block;
+	width: 400px;
+	border: 1px solid lightpink;
+}
