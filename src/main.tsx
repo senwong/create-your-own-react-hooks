@@ -1,5 +1,6 @@
 import React, { ReactElement } from "react";
 import './test';
+import './OwnRender';
 
 function useState(initStae?: any) {
 	// let _domNode;
@@ -42,7 +43,7 @@ export default function App() {
 let currentElement;
 
 function renderReactElement(
-	ele: number | string | ReactElement<{ children: any }>,
+	ele: number | string | ReactElement<{ children?: any, onClick?: any, }>,
 	parentNode: Node
 ): null | Node | Node[] {
 	if (ele === undefined || ele === null || typeof ele === "boolean") {
